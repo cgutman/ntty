@@ -1,12 +1,12 @@
 # Ntty Makefile
 
 CC=gcc
-CFLAGS=-c -Wall -Werror
+CFLAGS=-Wall -Werror
 
 all: ntty
 
 ntty: ntty.c
-	$(CC) $(CFLAGS) ntty.c -o ntty
+	$(CC) $(CFLAGS) ntty.c -o ntty -pthread
 
 clean:
 	rm -f ntty
